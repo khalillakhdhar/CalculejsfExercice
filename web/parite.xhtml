@@ -6,7 +6,17 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Hello from Facelets
+        <div align="center">
+            <h1>Vérification de la parité</h1>
+        <h:form>
+            valeur1: <h:inputText value="#{calcule.a}"></h:inputText> &nbsp;
+            <h:commandButton action="#{calcule.testparite()}" value="verifier la parité"></h:commandButton>
+            <br></br>
+             #{calcule.a} est: <h:outputText value="#{calcule.parite}"></h:outputText>
+             <br></br>
+            <h:commandLink value="retour" action="index.xhtml" ></h:commandLink>
+        </h:form>
+        </div>
     </h:body>
 </html>
 

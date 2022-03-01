@@ -6,7 +6,18 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Hello from Facelets
+        <div align="center">
+            <h1>Calcule de somme</h1>
+        <h:form>
+            valeur1: <h:inputText value="#{calcule.a}"></h:inputText> &nbsp;
+            valeur2: <h:inputText value="#{calcule.b}"></h:inputText> &nbsp;
+            <h:commandButton action="#{calcule.calculepgcd()}" value="calculer le pgcd"></h:commandButton>
+            <br></br>
+            Le pgcd de #{calcule.a} et #{calcule.b} est: <h:outputText value="#{calcule.pgcd}"></h:outputText>
+            <br></br>
+            <h:commandLink value="retour" action="index.xhtml" ></h:commandLink>
+        </h:form>
+        </div>
     </h:body>
 </html>
 

@@ -16,8 +16,8 @@ import javax.faces.bean.RequestScoped;
 @RequestScoped
 public class Calcule {
     private int a,b,somme,pgcd;
-    private String parite;
-    private double factoriel;
+    private String parite="paire";
+    private double factoriel=1;
 
     public int getA() {
         return a;

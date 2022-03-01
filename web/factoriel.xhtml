@@ -6,7 +6,17 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Hello from Facelets
+        <div align="center">
+            <h1>Calcule de la factoriel</h1>
+        <h:form>
+            valeur1: <h:inputText value="#{calcule.a}"></h:inputText> &nbsp;
+            <h:commandButton action="#{calcule.facto()}" value="Calculer la factoriel"></h:commandButton>
+            <br></br>
+            la factoriel #{calcule.a} est: <h:outputText value="#{calcule.factoriel}"></h:outputText>
+            <br></br>
+            <h:commandLink value="retour" action="index.xhtml" ></h:commandLink>
+        </h:form>
+        </div>
     </h:body>
 </html>
 
